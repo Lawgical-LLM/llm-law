@@ -74,7 +74,7 @@ const en: LocaleType = {
       if (submitKey === String(SubmitKey.Enter)) {
         inputHints += ", Shift + Enter to wrap";
       }
-      return inputHints + ", / to search prompts, : to use commands";
+      return "本页内所呈示内容均为弥司科技内部测试使用，仅供参考";
     },
     Send: "Send",
     Config: {
@@ -365,7 +365,7 @@ const en: LocaleType = {
   },
   Store: {
     DefaultTopic: "New Conversation",
-    BotHello: "Hello! How can I assist you today?",
+    BotHello: "我是律览Lawgical，请告诉我您遇到的问题，我将竭诚为您服务。",
     Error: "Something went wrong, please try again later.",
     Prompt: {
       History: (content: string) =>
@@ -398,7 +398,7 @@ const en: LocaleType = {
     Sysmessage: "You are an assistant that",
   },
   Mask: {
-    Name: "Mask",
+    Name: "Function",
     Page: {
       Title: "Prompt Template",
       SubTitle: (count: number) => `${count} prompt templates`,
@@ -441,8 +441,9 @@ const en: LocaleType = {
   NewChat: {
     Return: "Return",
     Skip: "Just Start",
-    Title: "Pick a Mask",
-    SubTitle: "Chat with the Soul behind the Mask",
+    Title: "Hello! I'm Lawgical LLM",
+    SubTitle:
+      "Tell me the problem you have encountered, I will sincerely serve you.",
     More: "Find More",
     NotShow: "Never Show Again",
     ConfirmNoShow: "Confirm to disable？You can enable it in settings later.",
