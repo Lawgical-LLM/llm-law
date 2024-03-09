@@ -489,13 +489,13 @@ export function ChatActions(props: {
           icon={<BottomIcon />}
         />
       )}
-      {props.hitBottom && (
+      {/* {props.hitBottom && (
         <ChatAction
           onClick={props.showPromptModal}
           text={Locale.Chat.InputActions.Settings}
           icon={<SettingsIcon />}
         />
-      )}
+      )} */}
 
       {showUploadImage && (
         <ChatAction
@@ -520,19 +520,19 @@ export function ChatActions(props: {
         }
       />
 
-      <ChatAction
+      {/* <ChatAction
         onClick={props.showPromptHints}
         text={Locale.Chat.InputActions.Prompt}
         icon={<PromptIcon />}
-      />
+      /> */}
 
-      <ChatAction
+      {/* <ChatAction
         onClick={() => {
           navigate(Path.Masks);
         }}
         text={Locale.Chat.InputActions.Masks}
         icon={<MaskIcon />}
-      />
+      /> */}
 
       <ChatAction
         text={Locale.Chat.InputActions.Clear}
@@ -549,11 +549,11 @@ export function ChatActions(props: {
         }}
       />
 
-      <ChatAction
+      {/* <ChatAction
         onClick={() => setShowModelSelector(true)}
         text={currentModel}
         icon={<RobotIcon />}
-      />
+      /> */}
 
       {showModelSelector && (
         <Selector
